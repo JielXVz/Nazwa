@@ -1543,7 +1543,7 @@ if __name__ == '__main__':
                       Layer4((target, port), ref, method, event,
                              proxies).start()
 
-              logger.info({bcolors.FAIL}Attack Started to{bcolors.OKCYAN} %s{bcolors.FAIL} with{bcolors.OKCYAN} %s{bcolors.FAIL} method for{bcolors.OKCYAN} %s{bcolors.FAIL} seconds, threads:{bcolors.OKCYAN} %d{bcolors.FAIL}!{bcolors.RESET}
+              logger.info(
                   f"\033[37m[INFO] \033[31mFucked Started To > \033[34m{}:{}, \033[31mWith Methods > \033[34m{}.".format(target or url.host, method))
               event.set()
               ts = time()
